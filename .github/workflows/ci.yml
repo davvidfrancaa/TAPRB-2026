@@ -19,7 +19,7 @@ jobs:
       id-token: write
       contents: read
     env:
-      AZURE_FUNCTIONAPP_NAME: 'nome-da-sua-function-app'
+      AZURE_FUNCTIONAPP_NAME: 'app-cicd-github-taprb-david'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -35,5 +35,3 @@ jobs:
           app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
           package: .
           remote-build: true
-
-          
