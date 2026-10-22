@@ -19,7 +19,7 @@ jobs:
       id-token: write
       contents: read
     env:
-      AZURE_FUNCTIONAPP_NAME: 'app-cicd-github-taprb-david'
+      AZURE_FUNCTIONAPP_NAME: 'azfunc-taprb-david'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
